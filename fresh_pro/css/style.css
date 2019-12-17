@@ -1,0 +1,416 @@
+/*=======================首页样式==========================*/
+
+
+/*顶部状态条样式*/
+
+body {
+    font-family: "Microsoft Yahei";
+    color: #666;
+    font-size: 12px;
+}
+
+
+/* ====================版心============ */
+
+.middle {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 29px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-menu {
+    height: 29px;
+}
+
+.welcome {
+    font: 12px/29px 'Microsoft Yahei';
+    color: rgb(0, 126, 241);
+}
+
+.user-login-link,
+.user-welcome,
+.user-shopping {
+    height: 29px;
+    line-height: 29px;
+}
+
+.user-login-link {
+    margin-left: -150px;
+}
+
+.user-login-link a,
+.user-shopping a {
+    color: #666666;
+}
+
+.user-shopping button {
+    color: #666666;
+    background-color: #F6F6F6;
+    font-family: "Microsoft Yahei";
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.user-shopping button:hover,
+.user-login-link a:hover,
+.user-shopping a:hover {
+    color: #ff8800;
+}
+
+.user-login-link span,
+.user-shopping span {
+    margin: 0px 15px;
+    color: #cecece;
+}
+
+.user-welcome {
+    display: none;
+    position: relative;
+    right: 26px;
+}
+
+.user-welcome em {
+    color: #ff8800;
+    cursor: pointer;
+    position: relative;
+    right: -3px;
+    font-size: 13px;
+}
+
+#logout {
+    position: relative;
+    left: 25px;
+}
+
+#logout a {
+    list-style: none;
+    color: #666666;
+    font-family: "Microsoft Yahei";
+    color: #666;
+    font-size: 12px;
+}
+
+#logout a:hover {
+    color: #ff8800;
+}
+
+
+/*============logo 搜索  购物车样式============*/
+
+.logo-bar {
+    height: 115px;
+}
+
+.logo {
+    width: 151px;
+    height: 59px;
+    margin: 29px 0 0 17px;
+}
+
+.search {
+    width: 616px;
+    height: 38px;
+    border: 1px solid #37ab40;
+    margin: 34px 0 0 123px;
+    background: url("../images/icons.png") 8px -337px no-repeat;
+}
+
+.search .input-text {
+    width: 470px;
+    height: 38px;
+    border: 0px;
+    margin-left: 37px;
+}
+
+.search .input-btn {
+    width: 100px;
+    height: 38px;
+    background-color: #37ab40;
+    border: 0px;
+    font: 14px/38px 'Microsoft Yahei';
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.chart {
+    width: 200px;
+    height: 40px;
+    margin-top: 34px;
+}
+
+.chart a {
+    width: 158px;
+    height: 38px;
+    border: 1px solid #ddd;
+    font: 14px/38px 'Microsoft Yahei';
+    color: #37ab40;
+    text-indent: 60px;
+    background: url("../images/icons.png") 15px -301px no-repeat #f7f7f7;
+}
+
+.chart span {
+    width: 40px;
+    height: 40px;
+    background-color: #f80;
+    font: bold 18px/40px 'Microsoft Yahei';
+    color: white;
+    text-align: center;
+}
+
+.sub-menu-con {
+    height: 40px;
+    border-bottom: 2px solid #37ab40;
+}
+
+.sub-menu {
+    height: 40px;
+}
+
+.sub-menu h1 {
+    width: 200px;
+    height: 40px;
+    background-color: #37ab40;
+    font: 14px/40px 'Microsoft Yahei';
+    color: #fff;
+    text-align: center;
+}
+
+.sub-menu li {
+    float: left;
+    height: 14px;
+    padding: 0 25px;
+    border-left: 0.6px solid #666;
+    margin: 0px 15px;
+    margin-right: -1px;
+    margin-top: 15px;
+}
+
+.sub-menu li:first-child {
+    border-left: none;
+}
+
+.sub-menu li a {
+    font: 14px/14px 'Microsoft Yahei';
+    color: rgb(39, 39, 39);
+}
+
+.sub-menu li a:hover {
+    color: #f80;
+}
+
+
+/*=======左侧菜单样式========*/
+
+.left-menu {
+    height: 270px;
+}
+
+.left-menu .main-menu {
+    width: 200px;
+    height: 270px;
+}
+
+.left-menu .main-menu li {
+    width: 198px;
+    height: 44px;
+    border: 1px solid #eee;
+    margin-top: -1px;
+    background: url("../images/icons.png") 175px -259px no-repeat;
+}
+
+.left-menu .main-menu li a {
+    display: block;
+    width: 198px;
+    height: 44px;
+    font: 14px/44px 'Microsoft Yahei';
+    color: #333333;
+    text-indent: 70px;
+    background: url("../images/icons.png") 16px 0px no-repeat;
+}
+
+.left-menu .main-menu li .fruit {
+    background-position: 16px 0px;
+}
+
+.left-menu .main-menu li .seafood {
+    background-position: 16px -44px;
+}
+
+.left-menu .main-menu li .meat {
+    background-position: 16px -88px;
+}
+
+.left-menu .main-menu li .egg {
+    background-position: 16px -134px;
+}
+
+.left-menu .main-menu li .vegetables {
+    background-position: 16px -176px;
+}
+
+.left-menu .main-menu li .ice {
+    background-position: 16px -221px;
+}
+
+.adv {
+    width: 240px;
+    height: 270px;
+}
+
+.adv a {
+    float: left;
+    width: 240px;
+    height: 135px;
+}
+
+
+/*解决图片下方出现的3像素的空白*/
+
+.adv a img {
+    display: block;
+}
+
+
+/*商品列表*/
+
+.common-model {
+    width: 1200px;
+    height: 340px;
+    margin: 18px auto 0;
+}
+
+.common-model .common-title {
+    height: 38px;
+    border-bottom: 2px solid #42ad46;
+}
+
+.common-model .common-title h3 {
+    font: bold 16px/38px 'Microsoft Yahei';
+    color: #37ab40;
+}
+
+.common-model .common-title ul {
+    height: 12px;
+    margin: 13px 0 0 20px;
+}
+
+.common-model .common-title li {
+    float: left;
+    margin: 0 10px;
+}
+
+.common-model .common-title li a {
+    color: #666;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.common-model .common-title li a:hover,
+.common-model .common-title .more:hover {
+    color: #f80;
+}
+
+.common-model .common-title .more {
+    height: 38px;
+    line-height: 38px;
+    color: #666;
+}
+
+.common-model .common-goods-list {
+    width: 1200px;
+    height: 300px;
+}
+
+.common-model .goods-banner {
+    width: 200px;
+    height: 300px;
+}
+
+.common-model .common-goods-list .goods-list {
+    width: 1000px;
+    height: 300px;
+}
+
+.common-model .common-goods-list .goods-list li {
+    width: 249px;
+    height: 299px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    float: left;
+}
+
+.common-model .common-goods-list .goods-list li h4 {
+    height: 52px;
+    font: 14px/52px 'Microsoft Yahei';
+    color: #666666;
+    text-align: center;
+}
+
+.common-model .common-goods-list .goods-list li a {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.common-model .common-goods-list .goods-list li p {
+    height: 52px;
+    font: bold 20px/52px 'Microsoft Yahei';
+    color: #c40000;
+    text-align: center;
+}
+
+.common-model .common-goods-list .goods-list li:hover {
+    width: 248px;
+    height: 298px;
+    border: 1px solid gold;
+}
+
+.go-back img {
+    width: 90px;
+    height: 90px;
+}
+
+
+/* ===========回到顶部============== */
+
+#go-back {
+    width: 28px;
+    height: 64px;
+    background: url("../images/goback.png");
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+#go-back:hover {
+    background-position: -28px 0;
+}
+
+#second—list li a img {
+    width: 180px;
+    height: 180px;
+}
+
+#rd-list li a img {
+    width: 180px;
+    height: 180px;
+}
+
+#fourth-list li a img {
+    width: 180px;
+    height: 180px;
+}
+
+#fifth-list li a img {
+    width: 180px;
+    height: 180px;
+}
+
+
+/*==========================结束=======================*/

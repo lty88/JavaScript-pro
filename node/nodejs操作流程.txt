@@ -1,0 +1,23 @@
+创建文件夹
+> cd 文件夹地址 
+> npm init -y  
+> nmp i -S jquery  下载
+> npm i -S body-parser cookie-parser multer express  下载
+> 创建server.js文件
+// 1. 导入express
+const express = require("express");
+// 2. 创建express实例
+const app = express();
+// 3. 监听 http://127.0.0.1:8081"
+app.listen(8081, "127.0.0.1");
+// 4. 监听GET请求，用户访问路径‘/’
+app.get("/", function (req, res) {
+    // req -> request -> 请求对象
+    // res -> response -> 响应对象
+  	// 响应，向前端发送数据
+    res.send("Hello, express!");
+});
+// 5. 打印输出提示信息
+console.log("server running at http://127.0.0.1:8081");
+> node server.js 
+有 package.json 直接 npm i

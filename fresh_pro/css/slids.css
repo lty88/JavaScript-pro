@@ -1,0 +1,69 @@
+.container{
+    position: relative;
+    cursor: pointer;
+    width: 760px;
+    height: 270px;
+}
+
+.container img {
+    width: 100%;
+    opacity: 0;
+    transition: all .5s linear;
+
+}
+
+.container img.show {
+    opacity: 1;
+
+}
+
+/* 第一张图片没有脱离 撑起整个容器的高度 */
+.container img:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container .btn {
+    width: 45px;
+    height: 30px;
+    /* background: rgb(255, 12, 52); */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain !important;
+}
+
+.btns .prev {
+    left: 10px;
+    background: url("../images/arr_left.png") no-repeat center center;
+
+}
+
+.btns .next {
+    right: 10px;
+    background: url("../images/arr_right.png") no-repeat center center;
+}
+
+.container .idots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.container .idot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: purple;
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
+    opacity: .75;
+}
+
+.container .idot.sel {
+    background: orange;
+}

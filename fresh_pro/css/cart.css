@@ -1,0 +1,132 @@
+.cart-count {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.cart-table {
+    height: 245px;
+}
+
+.cart-list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+}
+
+.cart-list li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.cart-list li:first-child {
+    margin-left: 42px;
+}
+
+.cart-list li:last-child {
+    margin-right: 90px;
+}
+
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    background-color: #edfff9;
+    margin: 0 auto;
+    margin-top: -1px;
+    position: relative;
+}
+
+.cart-content li {
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.cart-content .ct .item-img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    display: block;
+    position: relative;
+    left: 10px;
+}
+
+.ct span {
+    position: relative;
+    top: -50px;
+    left: -2px
+}
+
+.cart-content .item-tot-price {
+    margin-right: 50px;
+}
+
+.cart-content .check {
+    position: relative;
+    top: 60px;
+    left: 6px;
+}
+
+.cart-content .item-g,
+.item-price {
+    position: relative;
+    right: 54px;
+}
+
+.cart-content li:last-child {
+    position: relative;
+}
+
+.pay {
+    height: 78px;
+    display: flex;
+    text-align: center;
+    line-height: 78px;
+    background-color: #FFF2E6
+}
+
+.pay li:first-child {
+    width: 240px;
+    height: 78px;
+}
+
+.del {
+    position: absolute;
+    left: -80px;
+}
+
+.pay li:nth-child(2) {
+    width: 827px;
+    height: 78px;
+    text-align: right;
+    color: #ff3d3d;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pay li:nth-child(3) {
+    display: inline-block;
+    width: 167px;
+    height: 78px;
+    background-color: #ff3d3d;
+    color: #fff;
+    font-size: 24px;
+}
+
+.pay .fr {
+    margin-right: -2px;
+}
+
+.clearFix .check {
+    position: relative;
+    left: 6px;
+    top: 34px;
+}
+
+.clearFix span {
+    position: relative;
+    left: -78px;
+}

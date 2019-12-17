@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+
+
+.ct {
+    width: 300px;
+    height: 400px;
+    background: pink;
+    margin: 50px auto;
+}
+.ct:nth-child(odd) {
+    background: orange;
+}
+
+.go-back {
+    width: 28px;
+    height: 64px;
+    background: url("../images/topcio.png");
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.go-back:hover {
+    background-position: -28px 0;
+}
+
+/* 信笺纸 */
+.ct.box {
+    text-align: center;
+    line-height: 41px;
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 40px, blue 41px);
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.level {
+    width: 300px;
+    height: 40px;
+   
+}

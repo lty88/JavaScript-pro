@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tips.err {
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li><button id="a" type="button">BTN-1</button></li>
+        <li><button id="b" type="button">BTN-2</button></li>
+        <li><button id="c" type="button">BTN-3</button></li>
+        <li><button type="button">BTN-4</button></li>
+        <li><button type="button">BTN-5</button></li>
+    </ul>
+
+    <input type="text" data-reg="/^\w{4,8}$/">
+    <p class="tips" style="color: red; font-size:12px; display: none;">只能输入4~8位的字母数字下划线</p>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

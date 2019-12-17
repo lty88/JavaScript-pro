@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../public/util.js">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../public/normalized.css">
+    <link rel="stylesheet" href="../public/footer.css">
+
+</head>
+
+<body>
+    <!-- 头部内容 -->
+    <div class="header">
+        <div class="top-menu middle">
+            <div class="welcome fl">欢迎来到天天生鲜</div>
+            <div class="user-info fr">
+                <!--登录注册块-->
+                <div class="user-login-link fl">
+                    <a href="./pages/login.html">登录</a>
+                    <span>|</span>
+                    <a href="./pages/loginup.html">注册</a>
+
+                </div>
+                <!--用户欢迎页-->
+                <div class="user-welcome fl" style="display: block">
+                    欢迎您:<em id="user">admin</em>
+                </div>
+
+                <div class="user-shopping fl">
+                    <span>|</span>
+                    <a href="#">我的购物车</a>
+                    <span>|</span>
+                    <a href="#">我的订单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-bar middle">
+        <div class="logo fl">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo" /></a>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="search fl">
+            <form action="#" target="_blank" method="post">
+                <input type="text" name="input-text" placeholder="搜索" class="input-text fl">
+                <input type="button" name="input-bt" value="搜索" class="input-btn fr">
+            </form>
+        </div>
+
+
+    </div>
+    <!-- 加入购物车的商品数量 -->
+    <div class="cart-count middle">
+        <span>全部商品</span>
+        <span>5</span>
+        <span>件</span>
+    </div>
+    <!-- 购物车清单表头 -->
+    <div class="cart-table middle">
+        <ul class="cart-list">
+            <li>商品名称</li>
+            <li>商品单位</li>
+            <li>商品单价</li>
+            <li>商品数量</li>
+            <li>小计</li>
+            <li>操作</li>
+        </ul>
+
+        <ul class="cart-content middle fl">
+            <li class="ct">
+                <input class=" check fl" type="checkbox" checked="checked" name="check">
+                <img class="item-img " src="../images/goods_detail_caomei.jpg" alt="">
+                <span>新鲜草莓</span>
+            </li>
+
+            <li class="item-g">500g</li>
+            <li class="item-price">15.05</li>
+            <li item-count>5</li>
+            <li class="item-tot-price">75.25</li>
+            <li class="del">删除</li>
+        </ul>
+        <ul class="pay middle ">
+            <li class="clearFix fl">
+                <input class=" check fl" type="checkbox" checked="checked" name="check">
+                <span>全选</span>
+            </li>
+            <li>合计(不含运费)：
+                <span>￥75.25</span>
+            </li>
+            <li class="fr">去结算</li>
+        </ul>
+
+
+    </div>
+
+    <!-- footer部分 -->
+    <div class="footer login-footer middle">
+        <div class="links">
+            <a href="">关于我们</a>
+            <span>|</span>
+            <a href="">联系我们</a>
+            <span>|</span>
+            <a href="">招聘人才</a>
+            <span>|</span>
+            <a href="">友情链接</a>
+        </div>
+
+        <p>
+            CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved<br /> 电话：010-****888 京ICP备*******8号
+        </p>
+    </div>
+
+</body>
+
+</html>

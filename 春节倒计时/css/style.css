@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin: 0;  
+    
+}
+.contanier{
+    width: 900px;
+    height:800px;
+    background-color: #F5EAB4;
+    margin: 60px auto;
+   
+    
+}
+ .time{
+   font-size: 1.5rem;
+   text-align: center;
+   padding-top: 10px;
+   color:#333333;
+}
+ .time .cj{
+    font-size: 2.8rem;
+    color: #CC4E74;
+    text-shadow: 3px 3px 3px rgb(70, 71, 66);
+ }
+.time .timeDown{
+    font-size: 2.6rem;
+}
+ .section{
+     margin-top:30px ;
+    display: flex;
+    justify-content:center;
+    
+}
+.section .box{
+    text-align: center;
+    line-height: 100px;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    background-color: rgba(159, 174, 24, 0.2);
+    margin: 10px;
+    font-size: 2.5rem;
+    color: red;
+  
+   
+  
+}
+
+/* .rand{
+    width: 80px;
+    height: 80px;
+    /* border-radius: 50%; 
+}*/
+.ro{
+   transform:rotateY(-360deg) !important;
+   transition: all 1s !important;
+}

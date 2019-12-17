@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天天生鲜注册</title>
+    <link rel="stylesheet" href="../public/normalized.css">
+    <!-- <link rel="stylesheet" href="../public/util"> -->
+    <link rel="stylesheet" href="../public/footer.css">
+    <link rel="stylesheet" href="../css/loginup.css">
+</head>
+
+<body>
+    <div class="imgs">
+        <img src="../images/logup.jpg" alt="">
+        <img src="../images/logo.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 col-md-offset-3 well form-container">
+                <form action="#">
+                    <div id="loginfo">注册信息</div>
+                    <a id="longin" href="./login.html">已有账号，去登录</a>
+                    <div id="bor"></div>
+                    <!-- <div class="form-group has-feedback">
+                        <input type="text" class="form-control "  id="email" placeholder="请输入邮箱地址">
+                        <span id="email-helpBlock" class="help-block"> &nbsp;</span>
+                    </div> -->
+                    <div class="form-group  has-error">
+                        <label for="">手机号码：</label>
+                        <input type="text" class="form-control " required="required" id="tel" placeholder="请输入手机号码">
+                        <span id="tel-helpBlock" class="help-block">&nbsp;</span>
+                    </div>
+                    <div class="form-group has-success">
+                        <label for="">用&nbsp;&nbsp;户&nbsp;名：</label>
+                        <input type="text" class="form-control " required="required" id="username" placeholder="请输入用户名">
+                        <span id="username-helpBlock" class="help-block"> &nbsp;</span>
+                    </div>
+
+
+                    <div class="form-group control-label" class="form-group">
+                        <label for="">密 &nbsp;&nbsp;&nbsp;码：&nbsp; </label>
+                        <input type="password" class="form-control" required="required" id="password1" placeholder="请输入密码">
+                        <span id="password1-helpBlock" class="help-block"> &nbsp;</span>
+                    </div>
+                    <div class="form-group control-label" class="form-group">
+                        <label for="">&nbsp;密&nbsp;&nbsp;&nbsp;码&nbsp;：</label>
+                        <input type="password" class="form-control" id="password2" placeholder="请再次输入密码">
+                        <span id="password2-helpBlock" class="help-block"> &nbsp;</span>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> 我已经阅读同意 <a href="">《服务条款》、</a>
+                            <a href=""> 《隐私政策》和
+                            </a>
+                            <a href="">《儿童隐私政策》</a>
+                            <button type="submit" class="btn btn-primary" id="submit">注册</button> 
+                            <p id="remind"></p>
+                        </label>
+
+                    </div>
+                    <!-- <button type="submit" class="btn btn-primary" id="submit">注册</button> -->
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer login-footer">
+        <div class="links">
+            <a href="">关于我们</a>
+            <span>|</span>
+            <a href="">联系我们</a>
+            <span>|</span>
+            <a href="">招聘人才</a>
+            <span>|</span>
+            <a href="">友情链接</a>
+        </div>
+
+        <p>
+            CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved<br /> 电话：010-****888 京ICP备*******8号
+        </p>
+    </div>
+    <script src="../js/loginup.js"></script>
+    <script src="../js/ajax_register.js"></script>
+</body>
+
+</html>

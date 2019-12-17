@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>天天生鲜登录注册</title>
+    <link rel="stylesheet" type="text/css" href="../public/normalized.css" />
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../public/footer.css">
+</head>
+
+<body>
+    <div class="login-header clearfix">
+        <a href=""><img src="../images/logo.png" alt="logo"></a>
+    </div>
+
+    <div class="login-form-con clearfix">
+        <div class="login-form">
+            <img src="../images/login_banner.png" class="login-banner fl">
+            <p class="slogan fl">日夜兼程 . 急速送达</p>
+
+            <div class="form-input-con fr">
+
+                <div class="form-title">
+                    <h1>会员登录</h1>
+                    <a href="./loginup.html">立即注册</a>
+                </div>
+
+                <form action="../index.html" method="GET">
+                    <div class="form-group">
+                        <input type="text" id="username" name="username" class="input-txt username" placeholder="请输入用户名" required="required" pattern="^[a-zA-Z0-9_]{4,16}$" placeholder="账号为4到16位（字母，数字，下划线）" title="账号为4到16位（字母，数字，下划线）">
+                        <p class="error">格式错误，请重输！</p>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="password" id="password" name="pwd" class="input-pwd password" required="required" pattern="^[a-zA-Z0-9_]{6,16}$" placeholder="请输入密码" title="密码为4到16位（字母，数字，下划线）" placeholder="请输入密码">
+                        <span class="error">格式错误，请重输！</span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="checkbox" name="remember" id="remember" class="input-check fl">
+                        <label class="fl" for="remember">记住用户名</label>
+                        <a href="#" class="find-pass fr">忘记密码</a>
+                    </div>
+                    <p class="infop"></p>
+                   
+                </form>
+                <input class="input-sub btn" id="btn" type="button" name="" value="登 录">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer login-footer">
+        <div class="links">
+            <a href="">关于我们</a>
+            <span>|</span>
+            <a href="">联系我们</a>
+            <span>|</span>
+            <a href="">招聘人才</a>
+            <span>|</span>
+            <a href="">友情链接</a>
+        </div>
+
+        <p>
+            CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved<br />
+
+            电话：010-****888 京ICP备*******8号
+        </p>
+    </div>
+    <script src="../js/ajax_login.js"></script>
+    
+</body>
+</html>

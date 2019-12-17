@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hello - ajax</title>
+    <style>
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        .list li {
+            display: inline-block;
+            width: 120px;
+            line-height: 35px;
+            text-align: center;
+            background: purple;
+            color: #fff;
+        }
+        .list li.sel {
+            background: orange;
+        }
+
+        .heros li {display: inline-block; margin-right: 8px;}
+        .heros img { width: 100px; height: 100px;}
+    </style>
+</head>
+<body>
+
+    <img width="500" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575630805008&di=2cdf945742b142de995350c887130846&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F94cad1c8a786c917f66756b0c83d70cf3ac757d6.jpg" alt="">
+    
+    <ul class="list">
+        <li>OPTIONS-1</li>
+        <li>OPTIONS-2</li>
+        <li>OPTIONS-3</li>
+        <li>OPTIONS-4</li>
+        <li>OPTIONS-5</li>
+    </ul>
+
+    <!-- 用户信息 -->
+    <div class="info"></div>
+
+    <!-- 英雄列表 -->
+    <ul class="heros"></ul>
+
+    <!-- 引入jquery -->
+    <script src="./js/client.js"></script>
+    <script src="./js/server.js"></script>
+    <!-- <script src="./node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

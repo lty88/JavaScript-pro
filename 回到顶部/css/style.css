@@ -1,0 +1,20 @@
+.ct{
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    margin: 50px auto;
+}
+.ct:nth-child(odd){
+    background-color: rgb(255, 247, 0);
+}
+.go-back{
+    width: 28px;
+    height: 64px;
+    background:url("../imgs/QQ图片20191203141946.png");
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.go-back:hover{
+    background-position: -28px 0;
+}

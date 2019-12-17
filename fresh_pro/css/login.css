@@ -1,0 +1,146 @@
+/*=======================登录页样式==========================*/
+ 
+
+.login-header{
+    width: 953px;
+    height: 133px;
+    margin: 0 auto;
+}
+ 
+.login-header a{
+    display: block;
+    width: 193px;
+    height: 76px;
+    margin-top: 28px;
+}
+ 
+.login-form-con{
+    border-top: 1px solid #79a652;
+    height: 480px;
+    background-color: #518e17;
+}
+ 
+.login-form{
+    width: 953px;
+    height: 482px;
+    margin: 0 auto;
+}
+ 
+.login-form .login-banner{
+    margin: 92px 0 0 15px;
+}
+ 
+.login-form .slogan{
+    color: #ffffff;
+    font-size: 30px;
+    width: 30px;
+    height: 293px;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 83px;
+    margin-left: 114px;
+}
+ 
+.login-form .form-input-con{
+    width: 368px;
+    height: 379px;
+    background-color: white;
+    border: 1px solid #c6c6c5;
+    margin-top: 50px;
+}
+ 
+.login-footer{
+    border-top: 0px;
+    margin-top: 0px;
+}
+ 
+.form-title{
+    width: 308px;
+    height: 70px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0 auto;
+}
+ 
+.form-title h1{
+    float: left;
+    height: 70px;
+    font: bold 24px/70px 'Microsoft Yahei';
+    color: #a8a8a8;
+    margin-left: 44px;
+}
+ 
+.form-title a{
+    width: 100px;
+    height: 16px;
+    font: 16px/16px 'Microsoft Yahei';
+    color: #5fb42a;
+    text-indent: 25px;
+    float: left;
+    background: url("../image-day/icons02.png") 0px 0px no-repeat;
+    margin: 27px 0 0 33px;
+}
+ 
+ 
+.form-input-con form{
+    width: 308px;
+    height: 221px;
+    margin: 20px auto 0;
+}
+ 
+.form-input-con form .form-group{
+    width: 308px;
+    height: 68px;
+ 
+}
+ 
+.form-group .input-txt,.form-group .input-pwd{
+    width: 306px;
+    height: 38px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    text-indent: 10px;
+    background: url("../imgs/icons.png") 274px -43px no-repeat #f8f8f8;
+}
+ 
+.form-group .input-pwd{
+    background-position: 274px -93px;
+}
+ 
+.form-group .error{
+    font: 12px/28px 'Microsoft Yahei';
+    color: #ff5400;
+    display: none;
+}
+ 
+.form-group .input-check{
+    margin: 2px 10px 0 0;
+}
+ 
+.find-pass{
+    color: #4b4b4b;
+}
+ 
+.find-pass:hover{
+    color: #f80;
+}
+ 
+.input-sub{
+    width: 308px;
+    height: 40px;
+    background-color: #47aa34;
+    border: 0;
+    font: 24px/40px 'Microsoft Yahei';
+    color: white;
+    cursor: pointer;
+}
+#btn{
+    position: relative;
+    left: 33px;
+}
+.infop{
+    position: relative;
+    left: 1px;
+    top: -92px;
+    color: red;
+    font-size: 14px;
+}
