@@ -59,7 +59,7 @@
     <!-- 加入购物车的商品数量 -->
     <div class="cart-count middle">
         <span>全部商品</span>
-        <span>5</span>
+        <span class="tot-num"></span>
         <span>件</span>
     </div>
     <!-- 购物车清单表头 -->
@@ -73,26 +73,25 @@
             <li>操作</li>
         </ul>
 
-        <ul class="cart-content middle fl">
+        <!-- <ul class="cart-content middle fl">
             <li class="ct">
                 <input class=" check fl" type="checkbox" checked="checked" name="check">
-                <img class="item-img " src="../images/goods_detail_caomei.jpg" alt="">
-                <span>新鲜草莓</span>
+                <img class="item-img " src="" alt="">
+                <span class="goods-name"></span>
             </li>
 
             <li class="item-g">500g</li>
-            <li class="item-price">15.05</li>
-            <li item-count>5</li>
-            <li class="item-tot-price">75.25</li>
+            <li class="item-price"></li>
+            <li class="goods-nums"></li>
+            <li class="item-tot-price"></li>
             <li class="del">删除</li>
-        </ul>
+        </ul> -->
         <ul class="pay middle ">
             <li class="clearFix fl">
-                <input class=" check fl" type="checkbox" checked="checked" name="check">
-                <span>全选</span>
+        
             </li>
             <li>合计(不含运费)：
-                <span>￥75.25</span>
+                <span class="pay-price">￥</span>
             </li>
             <li class="fr">去结算</li>
         </ul>
@@ -101,7 +100,7 @@
     </div>
 
     <!-- footer部分 -->
-    <div class="footer login-footer middle">
+    <div class="footer login-footer clearFix middle ">
         <div class="links">
             <a href="">关于我们</a>
             <span>|</span>
@@ -116,7 +115,8 @@
             CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved<br /> 电话：010-****888 京ICP备*******8号
         </p>
     </div>
-
+    <script src="../js/url.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>

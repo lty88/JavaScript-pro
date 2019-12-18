@@ -21,9 +21,9 @@
             <div class="user-info fr">
                 <!--登录注册块-->
                 <div class="user-login-link fl">
-                    <a href="./pages/login.html">登录</a>
+                    <a href="login.html">登录</a>
                     <span>|</span>
-                    <a href="./pages/loginup.html">注册</a>
+                    <a href="loginup.html">注册</a>
 
                 </div>
                 <!--用户欢迎页-->
@@ -93,18 +93,18 @@
         <!-- 上面商品内容 -->
         <div class="top-sec middle">
             <div class="img fl">
-                <img src="../images/goods_detail_news-goods.jpg" alt="">
+                <img id="goodsurl" src="" alt="">
             </div>
             <div class="goods-info fr">
-                <h3>新鲜草莓</h3>
+                <h3 id="goodsname"></h3>
                 <p>好吃到上heaven</p>
                 <div class="price-bar">
                     <span class="show-price">
                         ￥
-                        <em id="unit-Price">15.05</em>
+                        <em id="unit-Price"></em>
                     </span>
                     <span class="show-unit">单 &nbsp; &nbsp;位:500g</span>
-                    <span class="show-unit">库 &nbsp; &nbsp;存:66886</span>
+                    <span class="show-unit">库 &nbsp; &nbsp;存:<span id="goodscount"></span></span>
                 </div>
 
                 <div class="goods-num clearFix">
@@ -117,14 +117,14 @@
                 </div>
                 <div class="tot">
                     总价：￥
-                    <em><input type="text" id="total" class="num-show fl" value="15.05"></em>
+                    <em><input type="text" id="total" class="num-show fl" value=""></em>
 
                 </div>
                 <div class="towbtn">
                     <form action="../pages/cart.html">
                         <button class="buy-btn">立即购买</button>
                     </form>
-                    <button id="into-Chart" class="add-cart">加入购物车</button>
+                    <button id="into-Chart" class="add-cart" data-id="1">加入购物车</button>
                 </div>
             </div>
         </div>
@@ -163,8 +163,12 @@
                     <dl id="dl">
                         <dt>商品详情：</dt>
                         <dd>
-                            <p>果鲜萃速冻水果系列 用途：鲜榨果汁，奶昔，冰沙，冰淇淋，水果布丁，法式甜点，果汁冰糕等。 规格: 450g/盒 * 24盒/箱。 果鲜萃水果含量高达95%（糖的含量为5%或者更低）不含任何色素及防腐剂。 需要在-18℃以下温度储藏，保质期24个月。 产品品类如下： 速冻草莓片 速冻芒果粒 速冻奇异果粒 速冻黄桃粒 注意：果鲜萃速冻水果属于冷冻商品，购买的亲们收到货后有可能已经解冻或融化，但不影响产品的质量和品质，只要亲们立即放到冰柜或者冷库冷冻即可。在为亲们打包的时候，我会用冰袋和果溶放在一起的，可以稍微保持产品的低温，减缓其融化的时间，鉴于速冻产品的特殊性，一旦售出概不退、换货，会介意的亲们，请一定要谨慎考虑，慎重再拍！！！
-                                还有亲们看到的宝贝上图片的生产日期是不准的，因为工作量很大，没有时间重新再拍照片。大多图片是之前拍的，所以上面的生产日期不是新的，但是产品是新的，请亲们放心。 友情提醒亲们：收到产品后请时间放回冷柜冷冻，使用时请挖取需要用的量后，立即放回冰柜，不要等彻底解冻了之后（过了很久）才放回冷冻，否则那样操作，解冻次数多了，就会影响产品的品质和口感。
+                            <p>果鲜萃速冻水果系列 用途：鲜榨果汁，奶昔，冰沙，冰淇淋，水果布丁，法式甜点，果汁冰糕等。 规格: 450g/盒 * 24盒/箱。
+                                果鲜萃水果含量高达95%（糖的含量为5%或者更低）不含任何色素及防腐剂。 需要在-18℃以下温度储藏，保质期24个月。 产品品类如下： 速冻草莓片 速冻芒果粒 速冻奇异果粒
+                                速冻黄桃粒
+                                注意：果鲜萃速冻水果属于冷冻商品，购买的亲们收到货后有可能已经解冻或融化，但不影响产品的质量和品质，只要亲们立即放到冰柜或者冷库冷冻即可。在为亲们打包的时候，我会用冰袋和果溶放在一起的，可以稍微保持产品的低温，减缓其融化的时间，鉴于速冻产品的特殊性，一旦售出概不退、换货，会介意的亲们，请一定要谨慎考虑，慎重再拍！！！
+                                还有亲们看到的宝贝上图片的生产日期是不准的，因为工作量很大，没有时间重新再拍照片。大多图片是之前拍的，所以上面的生产日期不是新的，但是产品是新的，请亲们放心。
+                                友情提醒亲们：收到产品后请时间放回冷柜冷冻，使用时请挖取需要用的量后，立即放回冰柜，不要等彻底解冻了之后（过了很久）才放回冷冻，否则那样操作，解冻次数多了，就会影响产品的品质和口感。
                             </p>
                         </dd>
                     </dl>
@@ -189,9 +193,10 @@
                 CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved<br /> 电话：010-****888 京ICP备*******8号
             </p>
         </div>
-
+        <script src="../js/url.js"></script>
         <script src="../js/details.js"></script>
-        <script src="../js/mirror.js"></script>
+
+
 
 
 </body>

@@ -6,14 +6,13 @@ const querystring = require("querystring");
 // => 查询商品
 router.get("/select", (req, res) => {
     console.log("「查询商品接口」被调用...");
-    let { id } = req.query;
+    let {
+        id
+    } = req.query;
     const db = getConnection();
     let sql = "";
     if (id) {
-        data.forEach(element => {
-
-        });
-        sql = `SELECT * FROM res_goods WHERE id = ${3}`;
+        sql = `SELECT * FROM res_goods WHERE goods_id = ${id }`;
     } else {
         sql = `SELECT * FROM res_goods`;
     }
@@ -23,10 +22,48 @@ router.get("/select", (req, res) => {
         if (err) {
             console.log("GET_goods_ERROR=>", err.message);
             res.send({
-                    code: 500,
-                    data: "服务器异常"
-                })
-                // console.log("没查到");
+                code: 500,
+                data: "服务器异常"
+            })
+            // console.log("没查到");
+
+        } else {
+            let data = id ? sqlRes[0] : sqlRes;
+
+            res.send({
+                code: 200,
+                data
+            });
+        }
+    });
+    // console.log("查询到了");
+
+    db.end();
+
+});
+//购物车取数据
+router.get("/selects", (req, res) => {
+    console.log("「查询商品接口」被调用...");
+    let {
+        id
+    } = req.query;
+    const db = getConnection();
+    let sql = "";
+    if (id) {
+        sql = `SELECT * FROM log_shopping WHERE goods_id = ${id }`;
+    } else {
+        sql = `SELECT * FROM log_shopping`;
+    }
+    console.log(sql);
+    db.connect();
+    db.query(sql, (err, sqlRes) => {
+        if (err) {
+            console.log("GET_log_shopping_ERROR=>", err.message);
+            res.send({
+                code: 500,
+                data: "服务器异常"
+            })
+            // console.log("没查到");
 
         } else {
             let data = id ? sqlRes[0] : sqlRes;
@@ -44,14 +81,67 @@ router.get("/select", (req, res) => {
 });
 // => 添加商品
 router.post("/add", (req, res) => {
+    let {
+        id,
+        goodsname,
+        goods_counts,
+        unitPrice,
+        totprice,
+        goodsurl,
+    } = req.body;
+    console.log(req.body);
     console.log("「添加商品接口」被调用...");
+    if (!id||!goods_counts||!totprice||!unitPrice||!goodsname||!goodsurl) {
+        res.send({
+            code: 204,
+            data: "请求参数有误"
+        });
+        return false;
+    }
+    // 数据库操作
+    const db = getConnection();
+    const sql = `INSERT INTO log_shopping (goods_id,goods_name,goods_price,goods_count,total_price,good_imgurl)VALUES(${ id },"${ goodsname }",${ Number(unitPrice) },${goods_counts }, ${ Number(totprice)},"${goodsurl}");`
+    console.log(sql);
+
+    db.connect();
+    db.query(sql, (err, sqlRes) => {
+        console.log(err);
+
+        if (err) {
+            console.log("REGISTER_ERROR=>: ", err.message);
+            switch (err.errno) {
+                case 1062: {
+                    res.send({
+                        code: 202,
+                        data: "用户已存在"
+                    })
+                }
+                break;
+            default: {
+                res.send({
+                    code: 500,
+                    data: "服务器异常"
+                })
+            }
+            }
+        } else {
+            res.send({
+                code: 200,
+                data: "添加商品成功"
+            })
+        }
+    });
+    db.end();
+
 
 });
 // => 修改商品
 router.post("/modify", (req, res) => {
     console.log("「修改商品接口」被调用...");
     let params = req.body;
-    let { id } = params;
+    let {
+        id
+    } = params;
     delete params.id;
     let obj = {};
     for (let key in params) {
@@ -86,7 +176,9 @@ router.post("/modify", (req, res) => {
 // => 删除商品
 router.post("/delete", (req, res) => {
     console.log("「删除商品接口」被调用...");
-    let { id } = req.body;
+    let {
+        id
+    } = req.body;
     if (!id) {
         res.send({
             code: 204,

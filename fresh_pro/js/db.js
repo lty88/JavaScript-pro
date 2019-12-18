@@ -1,4 +1,4 @@
-const BASE_URL = "http://192.168.50.33:8082"
+// const BASE_URL = "http://192.168.50.33:8082"
 fetch(`${BASE_URL}/goods/select`).then(res => {
     return res.json();
 }).then(data => {
@@ -10,13 +10,13 @@ fetch(`${BASE_URL}/goods/select`).then(res => {
         s += `
         <li>
         <h4>${data.data[i].goods_name}</h4>
-        <a href="../pages/details.html"><img src="${data.data[i].goods_image}" alt="${data.data[i].goods_name}" /></a>
+        <a href="../pages/details.html?id=${data.data[i].goods_id}"><img src="${data.data[i].goods_image}" alt="${data.data[i].goods_name}" /></a>
         <p>￥ ${data.data[i].price}</p>
     </li>
 `
     }
     ctone.innerHTML = s
-        //  console.log(data.data)
+    //  console.log(data.data)
 
 })
 

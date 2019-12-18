@@ -1,8 +1,4 @@
 //============== 注册=================
-//学校IP
-// const BASE_URL = "http://10.2.0.139:8081"
-//家里ip
-const BASE_URL = "http://192.168.50.33:8082"
 let usernameELEs = document.querySelector("#username")
 let telEle = document.querySelector("#tel")
 let passwordEle = document.querySelector("#password1")
