@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 580px;
+    height: 500px;
+    margin: 150px auto;
+}
+
+.box {
+    width: 273px;
+    height: 420px;
+    border: 1px solid rgb(249, 74, 255);
+    margin: auto;
+}
+
+body {
+    background: linear-gradient(to right, #e91e63, #3f51b5)
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background: rgb(253, 253, 253);
+}
+
+.textview {
+    width: 233px;
+    height: 40px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 10px;
+    outline: none;
+}
