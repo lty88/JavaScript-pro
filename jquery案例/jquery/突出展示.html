@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>突出展示</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/normalized.css">
+    <link rel="stylesheet" href="./css/tuchu.css">
+
+</head>
+<body>
+    <ul class="list">
+        <!-- <li><img src="./imgs/timg.jpg" alt=""></li> -->
+        <li><img src="./imgs/be/images/timg_03.gif" alt=""></li>
+        <li><img src="./imgs/be/images/timg_04.gif" alt=""></li>
+        <li><img src="./imgs/be/images/timg_05.gif" alt=""></li>
+
+        <li><img src="./imgs/be/images/timg_06.gif" alt=""></li>
+        <li><img src="./imgs/be/images/timg_07.gif" alt=""></li>
+        <li><img src="./imgs/be/images/timg_08.gif" alt=""></li>
+
+        <li><img src="./imgs/be/images/timg_09.gif" alt=""></li>
+        <li><img src="./imgs/be/images/timg_10.gif" alt=""></li>
+        <li><img src="./imgs/be/images/timg_11.gif" alt=""></li>
+    </ul>
+    <script>
+        $('.list li').mouseenter(function(){
+        $(this).css('opacity',1).siblings("li").css('opacity',.3);     
+        });
+        $('.list li').mouseleave(function(){
+        $(this).css('opacity',1)  
+        })
+    
+    </script>
+</body>
+</html>

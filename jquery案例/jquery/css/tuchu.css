@@ -1,0 +1,20 @@
+.list{
+    width: 1100px;
+    margin: 50px auto;
+    display: grid;
+    list-style: none;
+    padding: 0;
+    /* 定义网格 */
+    /* grid-template:row/column */
+    grid-template-columns: repeat(3, 300px);
+    /* grid-template-rows: repeat(3, 300px); */
+    /* grid-template-areas: ; */
+    /* grid-template: repeat(3, 300px) 300px/ repeat(3,300px); */
+    /* 格子间距 */
+    grid-gap: 5px;
+}
+.list li img {
+    width: 300px;
+    
+   
+}

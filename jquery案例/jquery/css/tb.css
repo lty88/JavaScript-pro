@@ -1,0 +1,25 @@
+nav{
+    width:500px;
+    margin: 80px auto;
+    position: relative;
+}
+.center li{
+    top: 15px;
+    position: absolute;   
+}
+
+.right li a,.left li a{
+    width: 45px;
+    padding: 5px;
+    margin: 12px;
+}
+ .right{
+    position: relative;
+    right: 10px;
+    top: 20px;
+}
+.left{
+    position: relative;
+    right: 70px;
+    bottom: 42px;
+}

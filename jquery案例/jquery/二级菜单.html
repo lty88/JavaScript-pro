@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二级菜单</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/normalized.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <ul class="menu-box">
+            <li>
+                <a href="javascript:;">首页</a>
+                <ul class="submenu">
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="javascript:;">关于我们</a>
+                <ul class="submenu">
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:;">团队</a>
+                <ul class="submenu">
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">新闻</a>
+                <ul class="submenu">
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">加我我们</a>
+                <ul class="submenu">
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">联系</a>
+                <ul class="submenu">
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                    <li><a href="javascript:;">二级菜单</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        // 获取一级菜单
+        console.log($('.menu-box>li'));
+        $('.menu-box>li').mouseenter(function () {
+            console.log($(this));
+            $(this).children('ul').fadeIn(500)
+        })
+        $(".menu-box>li").mouseleave(function () {
+            console.log($(this).children('ul'));
+            // let chi = $(this).children()[1];
+            $(this).children('ul').fadeOut(300);
+        });
+    </script>
+</body>
+
+</html>

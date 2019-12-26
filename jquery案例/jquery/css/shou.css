@@ -1,0 +1,26 @@
+    nav{
+        margin: 0 auto;
+        width: 200px;
+    }
+   .list li{
+       width: 200px;
+        border: 1px #999 solid;
+        background-color: rgb(200, 200, 200);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        cursor: pointer;
+    }
+    .list li span{
+        display: block;
+        height: 50px;
+       line-height: 50px;
+ 
+    }
+    .item{
+        display: none;
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgb(68, 68, 68);
+        text-align: center;
+     
+    }
